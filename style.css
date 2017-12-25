@@ -1,0 +1,76 @@
+#main {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#label {
+  flex: 0 0 auto;
+  width: 100px;
+}
+
+#chart {
+  flex: 1 1 auto;
+  display: flex;
+  margin: 10px 0;
+}
+
+.preview-root {
+  flex: 1 1 auto;
+  height: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.preview-root > .preview-child:not(:last-child) {
+  margin-right: 1px;
+}
+
+.preview-child {
+  flex: 1 1 auto;
+  height: 100%;
+  background-color: orange;
+}
+
+.preview-child:hover {
+  border: 2px solid #000;
+}
+
+.detail-root {
+  flex: 1 1 auto;
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.detail-root > .detail-child:not(:last-child) {
+  margin-right: 1px;
+}
+
+.detail-child {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: flex-start;
+}
+
+.detail-child > .detail-element:not(:last-child) {
+  margin-top: 1px;
+}
+
+.detail-element {
+  width: 100%;
+  background-color: green;
+}
+
+.completed {
+  background-color: green;
+}
+.inprogress {
+  background-color: orange;
+}
+.failed {
+  background-color: red;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "column-timeline",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack",
+    "dev": "./node_modules/.bin/webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonchen/column-timeline.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonchen/column-timeline/issues"
+  },
+  "homepage": "https://github.com/leonchen/column-timeline#readme",
+  "dependencies": {
+    "eventemitter2": "^5.0.0",
+    "virtual-dom": "^2.1.1",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/virtual-dom": "^2.0.27",
+    "@types/webpack": "^3.8.1",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
